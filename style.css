@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(188, 201, 212);
+    padding: 100px;
+}
+
+.main{
+    background-color: rgb(85, 156, 103);
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px rgb(80, 79, 79) ;
+    
+    
+}
+
+#btn{
+    background-color: rgb(173, 173, 229);
+    padding: 10px;
+    border-radius: 8px;
+    border-style:double;
+    margin-bottom: 20px;
+}
+
+.resposta{
+    background-color: azure;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px rgb(80, 79, 79) ;
+}
+#map {
+    height: 100%;
+}
+a{
+    color: rgb(85, 156, 103);
+}
