@@ -1,6 +1,18 @@
-# Meu primeiro projeto GitHub é meu site Portfólio
+# Site portifólio de Jonathan de Oliveira
 
-Este é meu portfólio demonstrando algumas informações pessoais ao meu respeito.
+
+## O porquê da criação deste site?
+
+Este é meu portfólio demonstrando algumas informações pessoais, criado para mostrar minha trajetória acadêmica, minhas skills, projetos feitos por mim, além com informações de contato.
+
+## Quem você almeja que veja o seu site?
+
+Possíveis colaboradores para projetos futuros, recrutadores e pessoas que queiram se inspirar para iniciarem seu próprio projeto.
+
+## Quais as futuras modificações/adições você planeja realizar no seu site?
+
+Pretendo fazer várias alterações no design, adicionar botões de redirecionamento para minhas redes sociais e inserir projetos feitos demonstrando meus conhecimentos.
+
 
 ## Preview
 <table width="100%"> 
