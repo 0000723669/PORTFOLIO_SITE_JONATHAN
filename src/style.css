@@ -2,7 +2,7 @@ body{
     text-align: center;
     justify-content: center;
     display: flex;
-    background-color: rgb(188, 201, 212);
+    background-color: lightgrey;
     padding: 100px;
     font-family: Arial, Helvetica, sans-serif;
 }
