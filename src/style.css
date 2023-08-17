@@ -4,11 +4,13 @@ body{
     display: flex;
     background-color: lightgrey;
     padding: 100px;
+}
+*{
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
-    color: lightgray;
+    color: lightyellow;
 }
 
 a{
