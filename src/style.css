@@ -1,8 +1,9 @@
+/* Nova atividade: Já havia utilizado tudo anteriormente citado */
 body{
     text-align: center;
     justify-content: center;
     display: flex;
-    background-color: lightgrey;
+    background-color: #d3d3d3;
     padding: 100px;
 }
 *{
@@ -10,7 +11,7 @@ body{
 }
 
 h1{
-    color: lightyellow;
+    color: #ffffe0;
 }
 
 a{
@@ -20,11 +21,11 @@ a{
 
 
 .main{
-    background-color: rgb(85, 156, 103);
+    background-color: rgba(85, 156, 103, 1);
     padding: 20px;
     width: 500px;
     border-radius: 10px;
-    box-shadow: 5px 5px 2px rgb(80, 79, 79) ;
+    box-shadow: 5px 5px 2px rgba(80, 79, 79, 1) ;
     
 }
 
@@ -39,7 +40,7 @@ a{
 }
 
 .content{
-    background-color: azure;
+    background-color: rgb(240, 255, 255);
     line-height: 40px;
     padding: 10px;
     height: 400px;
