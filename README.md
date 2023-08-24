@@ -15,7 +15,7 @@ Pretendo fazer várias alterações no design, adicionar botões de redirecionam
 
 
 ## Preview
-<table width="100%"> 
+<table style="background-color:red;" width="100%"> 
 <tr>
 <td width="100%">
 <br>
