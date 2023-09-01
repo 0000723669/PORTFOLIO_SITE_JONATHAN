@@ -140,13 +140,11 @@ header{
     justify-content: center;
 }
 
-#projetos .cardBox:hover {
-    box-shadow: 0px 0px 10px -6px rgb(36, 36, 36);
-}
+
 
 .cardBox {
     background-color: #e8ecec;
-    box-shadow: inset 0px 0px 10px -5px rgb(36, 36, 36);
+    box-shadow: 0px 0px 10px -5px rgb(36, 36, 36);
     border-radius: 8px;
     padding: 20px;
     width: 400px;
