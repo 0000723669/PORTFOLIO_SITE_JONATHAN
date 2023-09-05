@@ -1,6 +1,7 @@
 ## Portfólio
 
 Trata-se do meu portfólio pessoal, demonstrando meus conhecimentos e artigos acadêmicos.
+Acessível em: https://jonathandopovo.github.io/
 
 ## Preview
 <table width="100%"> 
