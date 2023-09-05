@@ -7,6 +7,6 @@ Trata-se do meu portfólio pessoal, demonstrando meus conhecimentos e artigos ac
 <tr>
 <td width="100%">
 <br>
-<img src="https://github.com/0000723669/jonathandopovo.github.io/blob/main/SAMPLE.png">
+<img src="https://github.com/jonathandopovo/jonathandopovo.github.io/blob/main/SAMPLE.png">
 </td> 
 </table>
