@@ -23,6 +23,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .opacity{
     opacity: 0.60;
 }
@@ -87,7 +88,6 @@ header{
     align-items: center;
 }
 
-
 .mb-40{
     margin-bottom: 40px ;
 }
@@ -111,8 +111,8 @@ header{
     font-weight: bold;
     text-decoration: none;
     box-shadow: 0px 0px 10px -6px rgb(36, 36, 36);
-    
 }
+
 .btn-card:hover{
     transform: scale(1.05);
     box-shadow: 0px 0px 10px -2px rgb(36, 36, 36);
@@ -133,14 +133,11 @@ header{
     box-shadow: 0px 0px 10px -6px rgb(36, 36, 36);
 }
 
-
 .centervh{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-
 
 .cardBox {
     background-color: #e8ecec;
@@ -159,8 +156,6 @@ header{
 .block{
     display: block;
 }
-
-
 
 .d-flex{
     display: flex;
@@ -183,7 +178,6 @@ header{
     color: rgb(70, 28, 28);
 }
 
-
 #projetos a:hover{
     color: #ab8a8a;
 }
@@ -191,7 +185,6 @@ header{
 .cardBox:hover{
     background-color: #d6d9d9 ;
 }
-
 
 #sobre{
     background-color: #e8ecec ;
@@ -207,8 +200,6 @@ header{
 h2{
     font-size: 24px;
 }
-
-
 
 .padding-5{
     padding: 5%;
@@ -261,6 +252,9 @@ a:hover {
     transform: scale(1.05);
 }
 
+.footer a:active {
+    transform: scale(0.98);
+}
 
 .button {
     text-align: center;
@@ -295,8 +289,6 @@ footer p{
 a{
     text-decoration: none;
 }
-
-
 
 #whatsapp{
     width: 84px;
@@ -345,4 +337,3 @@ a{
 #contato{
     height: fit-content;
 }
-
