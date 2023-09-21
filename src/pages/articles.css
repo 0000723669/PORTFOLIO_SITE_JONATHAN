@@ -40,6 +40,7 @@ body{
     width: 254px;
     height: 100%;
     padding: 2px;
+    padding-bottom: 0;
 }
 
 .left-side-bar button {
@@ -117,4 +118,8 @@ section.cardBox {
 .title-cs{
     font-size: 25px;
     margin-top: 40px
+}
+
+iframe{
+    border-radius: 8px;
 }
