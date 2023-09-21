@@ -244,19 +244,19 @@ nav img{
     height: 200px;
 }
 
+
+
 .fa-img{
-    background-image: url(../images/seguranca-da-informacao.jpg);
+    background-image: url(../images/seguranca-da-informacao.png);
     background-size: cover;
 }
 
 .sa-img{
-    color: #fff;
-    background-image: url(../images/piratas-vale-silicio.jpg);
+    background-image: url(../images/piratas-vale-silicio.png);
     background-size: cover;
 }
 .ta-img{
-    color: #fff;
-    background-image: url(../images/playlist.jpg);
+    background-image: url(../images/playlist.png);
     background-size: cover;
 }
 
