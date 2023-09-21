@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segurança da Informação</title>
+    <title>Artigos</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style-pages.css">
-    <link rel="shortcut icon" href="../images/title.ico">
+    <link rel="stylesheet" href="./articles.css">
 </head>
 <body>
     <header class="cardshadow">
@@ -20,20 +20,16 @@
         </nav>
     </header>
 
-    <div class="content">
-        <div class="site-nav" class="cardshadow">
-            <nav>
-                <h3 class="center">Navegação</h3>
-                <ul>
-                    <li><a href="#inicio">O valor dos Dados </a></li>
-                    <li><a href="#desenvolvimento">Como os Ataques “Hackers” Acontecem?</a></li>
-                    <li><a href="#fim">Como nos Prevenir de Invasões</a></li>
-
-                </ul>
-
-            </nav>
+    <div class="content-group">
+        <div class="left-side-bar card">
+            <button class="linkToArticle" onclick="openContent(event, 'Article1')"
+                id="abertoPorPadrao">Segurança da Informação</button>
+            <button class="linkToArticle" onclick="openContent(event, 'Article2')">Piratas do Vale do Silício</button>
+            <button class="linkToArticle" onclick="openContent(event, 'Article3')">Minha Playlist</button>
         </div>
-        <h1 class="center">A Importância da Segurança da informação</h1>
+        <div class="articles">
+            <section id="Article1" class="article-content card  cardBox">
+                <h1 class="center title-cs">A Importância da Segurança da informação</h1>
     
             <section id="inicio" class="cardshadow">
                 <div class="inicio">
@@ -119,15 +115,67 @@
                         <img src="../images/seguranca.png" id="seguranca" alt="Segurança">
                     </aside>
                 </div>
-            </section>    
+            </section>  
+            </section>
 
+            <section id="Article2" class="article-content card  cardBox">
+                <div class="page-content cardshadow" style="margin-top: 40px;">
+                    <aside>
+                        <img class="cardshadow" src="../images/Pirates_of_silicon_valley.png" alt="Imagem da Capa do Filme">
+                    </aside>
+                        <h2>Piratas do Vale do Silício</h2>
+                        <div class="film-review">
+                            <p>
+                                &nbsp &nbsp O filme apresenta a história de evolução da computação logo após a IBM revolucionar o mercado com a invenção do PC (Personal Computer),
+                                 tendo como protagonistas Steve Jobs e Bill Gates. Essa história é repleta de acontecimentos marcantes para a vida como a conhecemos 
+                                 hoje, além de uma intriga vivida por seus protagonistas, e a brilhante forma como ambos conduziram o rumo de suas empresas. 
+                                 No debate, apesar da rivalidade entre Jobs e Gates, é possível perceber que ao final eles entraram em comum acordo, já que ambos 
+                                 sairiam beneficiados.
+            
+                            </p>
+                            <p>
+                                &nbsp &nbsp O filme se inicia mostrando o surgimento da Apple, ao Jobs ver enorme potencial na invenção de seu amigo de infância Steve 
+                                Wozniak. Após conseguirem vender sua ideia, deram início a Apple na garagem da casa de seus pais, e assim começaram a buscar potenciais
+                                 investidores para aumentar sua produção e consequentemente o crescimento da empresa. Após um investimento inicial, a Apple consegue 
+                                 impulsionar bastante suas vendas com o lançamento do Apple II. Em paralelo a isso, a Microsoft se desenvolvia licenciando seu sistema
+                                  operacional para os computadores da IBM, até que ambos se encontraram para trabalhar juntos num mesmo projeto. Porém houve um grande 
+                                  desentendimento entre Bill e Steve ao Gates roubar sua ideia de um Sistema Operacional com interface gráfica amigável ao usuário,
+                                   lançando ao público seu projeto antes da Apple.
+                            </p>
+                            <p>
+                                &nbsp &nbsp Com a expulsão de Jobs da Apple, suas ações caem drasticamente, por uma série de erros da diretoria, e enquanto isso, 
+                                a Microsoft tem um crescimento exponencial. Porém, nos anos seguintes a Microsoft estava em risco, sob a acusação do governo norte
+                                 americano por monopólio de mercado. Sendo assim, ao Steve retornar a Apple, o mesmo decide se reconciliar com Bill, pois seria algo
+                                  benéfico aos dois. E então, ao invés de concorrentes, cada um deu seguimento a suas apostas, a Microsoft licenciando seu sistema
+                                   operacional para várias fabricantes de hardware, enquanto a Apple desenvolvia tanto seu software, quanto hardware, dando ênfase 
+                                   ao design elegante e a integração entre seus dispositivos. 
+                            </p>
+                            <p>
+                                &nbsp &nbsp Com tudo aqui abordado, pode-se inferir que a Microsoft foi uma das pioneiras no mercado de software como produto, tanto com seu 
+                                sistema operacional, quanto com suas ferramentas de produtividade. Em paralelo a isso, sabemos também que há soluções alternativas 
+                                a esses sistemas, os chamados softwares Open Source, que além de serem gratuitos ao público, têm seu sistema aberto aos usuários, 
+                                para assim tomarmos ciência da forma a qual processam nossos dados, além de nos permitir os alterar de acordo com nossas necessidades. 
+                                Sendo assim, os softwares Open Source são bem mais vantajosos e transparentes com seus usuários.
+                            </p>
+                        </div>   
+                
+                    </div>
+            
+                </div>
+            </section>
+
+            <section id="Article3" class="article-content card  cardBox">
+                <h1 class="center title-cs">Músicas Favoritas</h1>
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/S6NFSUa8rT0" title="Lagum - Melhores | As Músicas Do Lagum | Pop Nacional" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
+        </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer centervh">
         <a href="https://github.com/jonathandopovo" target="_blank">
             <p class="center opacity">&copy; Jonathan de Oliveira Rocha</p>
         </a>
     </footer>
-    
+    <script src="../script/main.js"></script>
 </body>
 </html>
