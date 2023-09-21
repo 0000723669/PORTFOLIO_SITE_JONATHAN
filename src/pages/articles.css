@@ -7,13 +7,11 @@
     background-color: rgb(225, 227, 229);
     width: 10px;
     border: 1px solid back;
-    color: #1a1a1a;
 }
 
 ::-webkit-scrollbar-thumb{
     background-color: #8a8a89;
     border-radius: 20px;
-    
 }
 
 body{
