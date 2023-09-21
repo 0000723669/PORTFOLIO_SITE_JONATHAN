@@ -313,10 +313,7 @@ a:hover {
 }
 
 footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
+    height: 55px;
     background-color: #143e3b;
 }
 footer p{
@@ -373,6 +370,3 @@ a{
     justify-content: center;
 }
 
-#contato{
-    height: fit-content;
-}
