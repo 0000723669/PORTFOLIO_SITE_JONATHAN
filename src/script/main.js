@@ -19,4 +19,9 @@ function openContent(event, nomeArtigo) {
   for(var i=a+1; i<url_atual.length;i++){
     artigoPadrao+=url_atual[i]
   }
-  document.getElementById(`${artigoPadrao}`).click();
+  if(artigoPadrao==url_atual){
+    document.getElementById('artigo1').click();
+  }else{
+    document.getElementById(`${artigoPadrao}`).click();
+  }
+  
