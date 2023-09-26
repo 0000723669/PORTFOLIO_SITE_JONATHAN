@@ -7,14 +7,6 @@
     position: relative;
 }
 
-.background-image{
-    position: fixed;
-}
-
-.background-image img{
-    width: 100%;
-}
-
 body{
     font-size: 12px;
     line-height: 1.5;
@@ -138,7 +130,6 @@ body{
 
 .cardBox:hover{
     box-shadow: 0px 0px 10px -5px rgb(36, 36, 36);
-
     background-color: #e8ecec ;
 }
 
@@ -239,25 +230,21 @@ nav img{
     float: right !important;
 }
 
-#carouselExampleInterval img{
-    border-radius: 10px;
-    height: 200px;
-}
-
-
-
 .fa-img{
-    background-image: url(../images/seguranca-da-informacao.png);
+    background-image: url(../images/seguranca-da-informacao.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .sa-img{
-    background-image: url(../images/piratas-vale-silicio.png);
+    background-image: url(../images/piratas-vale-silicio.jpg);
     background-size: cover;
+    background-position: top;
 }
 .ta-img{
-    background-image: url(../images/playlist.png);
+    background-image: url(../images/playlist.jpg);
     background-size: cover;
+    background-position: top;
 }
 
 .to-left{
@@ -370,3 +357,36 @@ a{
     justify-content: center;
 }
 
+#carouselExampleInterval{
+    height: 400px;
+    width: 100%; 
+}
+.cardCarousel{
+    height: 400px;
+    width: 100%; 
+}
+
+.carouselContent{
+    padding-top: 210px;
+    padding-left: 10%;
+    height: 90%;
+}
+
+.CTAcontent{
+    padding: 30px;
+    border-radius: 8px;
+    width: fit-content;
+    background-color: #e8ecec;
+}
+
+.carouselContent p{
+    font-size: 30px;
+}
+
+.carousel-control-next{
+    width: 100px;
+}
+
+.carousel-control-prev{
+    width: 100px;
+}

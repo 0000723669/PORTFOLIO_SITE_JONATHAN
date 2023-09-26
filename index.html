@@ -10,10 +10,6 @@
 </head>
 <body>
     <div class="page-content">
-
-    <div class="background-image">
-        <img src="./src/images/background-image.jpg" alt=" Imagem de Fundo">
-    </div>
     <div class="portfolio-content">
         <header class="cardshadow">
             <nav class="nav-items">
@@ -45,7 +41,6 @@
                             <h2>App Inventor</h2>
                             <p>Projetos feitos no <a href="https://appinventor.mit.edu/" target="_blank">App Inventor</a>.</p>
                             <a href="https://github.com/jonathandopovo/MEUS_APLICATIVOS_APP_INVENTOR" target="_blank"><button class="btn-card">Leia Mais</button></a>
-                        
                         </div>
                         <div class="cardBox">
                             <h2>GitHub</h2>
@@ -55,41 +50,49 @@
                     </div>
                 </div>
             </section>
-            <section id="artigos" class="cardshadow centervh padding-64">
-                <div class="block">
-                    <h2 class="wide center mb-40">ARTIGOS</h2>
-                    <div class="card-container">
-                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                              <div class="carousel-item active" data-bs-interval="10000">
-                                <div class="cardBox fa-img centervh">
-                                    <a href="./src/pages/articles.html#artigo1"><button class="btn-card">Cibersecurity</button></a>
+            <section id="artigos" class="cardshadow centervh">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="cardCarousel fa-img">
+                            <div class="carouselContent">
+                                <div class="CTAcontent">
+                                    <p>A Importância da Segurança da informação</p>
+                                    <a href="./src/pages/articles.html#artigo1"><button class="btn-card">Leia mais</button></a>
                                 </div>
-                              </div>
-                              <div class="carousel-item" data-bs-interval="2000">
-                                <div class="cardBox sa-img centervh">
-                                    <a href="./src/pages/articles.html#artigo2"><button class="btn-card">Review</button></a>
-                                </div>  
-                              </div>
-                              <div class="carousel-item">
-                                <div class="cardBox ta-img centervh">
-                                    <a href="./src/pages/articles.html#artigo3" target="_blank"><button class="btn-card">Playlist</button></a>
-                                </div> 
-                              </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
                         </div>
-                                         
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                        <div class="cardCarousel sa-img">
+                            <div class="carouselContent">
+                                <div class="CTAcontent">
+                                    <p>Crítica sobre o filme "Piratas do Vale do Silício"</p>
+                                    <a href="./src/pages/articles.html#artigo2"><button class="btn-card">Ouça</button></a>
+                                </div>    
+                            </div>
+                        </div>  
+                        </div>
+                        <div class="carousel-item">
+                        <div class="cardCarousel ta-img">
+                            <div class="carouselContent">
+                                <div class="CTAcontent">
+                                    <p>Minha playlist</p>
+                                    <a href="./src/pages/articles.html#artigo3" target="_blank"><button class="btn-card">Playlist</button></a>
+                                </div>
+                            </div>
+                        </div> 
+                        </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-    
             </section>
             <section id="contato" class="cardshadow padding-64">
                 <h2 class="wide center ">CONTATOS</h2>
