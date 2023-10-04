@@ -280,20 +280,20 @@
                 }
 
                 for (let x = 0; x <= 2; x++) {
-                    temp += parseInt(materias[x])
+                    temp += parseFloat(materias[x])
                 }
 
                 resultado += `Português "${temp.toFixed(2)}pts": ${temp >= 60 ? "Aprovado" : "Reprovado"}\n`
 
                 temp = 0
                 for (let x = 3; x <= 5; x++) {
-                    temp += parseInt(materias[x])
+                    temp += parseFloat(materias[x])
                 }
                 resultado += `Matemática "${temp.toFixed(2)}pts": ${temp >= 60 ? "Aprovado" : "Reprovado"}\n`
 
                 temp = 0
                 for (let x = 6; x <= 8; x++) {
-                    temp += parseInt(materias[x])
+                    temp += parseFloat(materias[x])
                 }
                 resultado += `Ciências "${temp.toFixed(2)}pts": ${temp >= 60 ? "Aprovado" : "Reprovado"}\n`
 
