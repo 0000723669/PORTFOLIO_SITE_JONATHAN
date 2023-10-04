@@ -269,7 +269,7 @@
         }
 
         function atividade5() {
-            if (!msgDialog(5) && !maiorQue100(5)) {
+            if (!verificaCampos(5) && !numNegativo(5)  && !maiorQue100(5)) {
                 let materias = []
                 var temp = 0;
                 let resultado = "";
