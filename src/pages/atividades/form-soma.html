@@ -215,9 +215,9 @@
             let num1 = document.querySelector("#input2-num1").value
             let num2 = document.querySelector("#input2-num2").value
             let resultado;
-            if(num1===num2){
+            if(parseFloat(num1)===parseFloat(num2)){
                 resultado="Os número são iguais"
-            }else if(num1>num2){
+            }else if(parseFloat(num1)>parseFloat(num2)){
                 resultado="Os número 1 é maior que o número 2"
             }else{
                 resultado="Os número 2 é maior que o número 1"
