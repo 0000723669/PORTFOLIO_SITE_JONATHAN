@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT - PRÁTICA FUNDAMENTAL </title>
+    <style>
+        body{
+            background-color: rgb(252, 252, 252);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        section{
+            padding: 20px;
+            margin-bottom: 50px;
+            background-color: rgb(204, 204, 204);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgb(157, 157, 157);
+        }
+
+        input{
+            border:none;
+            border-radius: 5px;
+            padding: 3px;
+        }
+
+        button{
+            border: none;
+            border-radius: 5px;
+            padding: 3px;
+            background-color: rgb(147, 196, 147);
+            box-shadow: 0px 0px 10px 0px rgb(157, 157, 157);
+            cursor: pointer;
+            &:hover{
+                background-color: rgb(95, 171, 95);
+            }
+        }
+        .result{
+            display: none;
+            margin-top: 20px;
+            border-radius: 10px;
+            height: fit-content;
+            padding: 20px;
+            width: 80%;
+            box-shadow: inset 0px 0px 10px 0px rgb(157, 157, 157);
+        }
+    </style>
+</head>
+<body>
+    <section id="atividade1">
+        <h1>Verifique a idade</h1>
+        <label>Digite sua idade: </label>
+        <input id="input1" type="number">
+        <button id="btn1">Verificar</button>
+        <div class="result">
+            <p id="result1"></p>
+        </div>
+        
+    </section>
+
+    <section id="atividade2">
+        <h1>Compare números</h1>
+        <p>
+            <label for="num1">Número 1: </label>
+            <input id="input2-num1" type="number">
+        </p>
+        <p>
+            <label >Número 2: </label>
+            <input id="input2-num2" type="number">
+        </p>
+        <button id="btn2">Comparar</button>
+        <div class="result">
+            <p id="result2"></p>
+        </div>
+        
+    </section>
+
+    <section id="atividade3">
+        <h1>Verifique se há divisibilidade</h1>
+        <p>
+            <label>Número 1: </label>
+            <input id="input3-num1" type="number">
+        </p>
+
+        <p>
+            <label>Número 2: </label>
+            <input id="input3-num2" type="number">
+
+        </p>
+        <button id="btn3">Comparar</button>
+        <div class="result">
+            <p id="result3"></p>
+        </div>
+       
+    </section>
+
+    <section id="atividade4">
+        <h1>Verificação de temperatura</h1>
+        <label>Insira a temperatura: </label>
+        <input id="input4" type="number">
+        <button id="btn4">Comparar</button>
+        <div class="result">
+            <p id="result4"></p>
+        </div>
+        
+    </section>
+
+    <section id="atividade5">
+        <h1>Verificação de notas</h1>
+
+        <h2>Português:</h2>
+
+        <label>1° trimestre: </label>
+        <input id="input5-1-1" type="number">
+
+        <label>2° trimestre: </label>
+        <input id="input5-1-2" type="number">
+
+        <label>3° trimestre: </label>
+        <input id="input5-1-3" type="number">
+        <!--  -->
+
+        <h2>Matemática:</h2>
+
+        <label>1° trimestre: </label>
+        <input id="input5-2-1" type="number">
+
+        <label>2° trimestre: </label>
+        <input id="input5-2-2" type="number">
+
+        <label>3° trimestre: </label>
+        <input id="input5-2-3" type="number">
+
+        <h2>Ciências:</h2>
+
+        <label>1° trimestre: </label>
+        <input id="input5-3-1" type="number">
+
+        <label>2° trimestre: </label>
+        <input id="input5-3-2" type="number">
+
+        <label>3° trimestre: </label>
+        <input id="input5-3-3" type="number">
+        <br>
+        <br>
+
+        <button id="btn5">Verificar</button>
+        <div class="result">
+            <p id="result5"></p>
+        </div>
+        
+    </section>
+
+    <section id="atividade6">
+        <h1> Cálculo do fatorial de um número</h1>
+        <label>Digite um número: </label>
+        <input id="input6" type="number">
+        <button id="btn6">Calcular</button>
+        <div class="result">
+            <p id="result6"></p>
+        </div>
+        
+    </section>
+
+    <section id="atividade7">
+        <h1>Contagem regressiva</h1>
+        <label>Digite um número: </label>
+        <input id="input7" type="number">
+        <button id="btn7">Contagem</button>
+        <div class="result">
+            <p id="result7"></p>
+        </div>
+
+
+    </section>
+
+    <section id="atividade8">
+        <h1>Tabuada de um número</h1>
+        <label>Digite um número: </label>
+        <input id="input8" type="number">
+        <button id="btn8">Calcular</button>
+        <div class="result">
+            <p id="result8"></p>
+        </div>
+
+
+    </section>
+        
+
+
+    <script>
+        document.querySelector("#btn1").addEventListener("click", atividade1)
+        document.querySelector("#btn2").addEventListener("click", atividade2)
+        document.querySelector("#btn3").addEventListener("click", atividade3)
+        document.querySelector("#btn4").addEventListener("click", atividade4)
+        document.querySelector("#btn5").addEventListener("click", atividade5)
+        document.querySelector("#btn6").addEventListener("click", atividade6)
+        document.querySelector("#btn7").addEventListener("click", atividade7)
+        document.querySelector("#btn8").addEventListener("click", atividade8)
+        
+        function atividade1(){
+            let idade = document.querySelector("#input1").value
+            let resultado;
+            if(idade<18){
+                resultado = "menor de idade"
+            }else if (idade<65){
+                resultado = "adulto"
+            }else{
+                resultado = "idoso"
+            }
+            document.querySelector("#result1").innerText = `Você é ${resultado}`
+            document.querySelector("#atividade1 .result").style.display = 'block'
+        }
+
+        function atividade2(){
+            let num1 = document.querySelector("#input2-num1").value
+            let num2 = document.querySelector("#input2-num2").value
+            let resultado;
+            if(num1===num2){
+                resultado="Os número são iguais"
+            }else if(num1>num2){
+                resultado="Os número 1 é maior que o número 2"
+            }else{
+                resultado="Os número 2 é maior que o número 1"
+            }
+            document.querySelector("#result2").innerText = resultado
+            document.querySelector("#atividade2 .result").style.display = 'block'
+        }
+
+        function atividade3(){
+            let num1 = document.querySelector("#input3-num1").value
+            let num2 = document.querySelector("#input3-num2").value
+            let resultado;
+            if(num1%num2===0){
+                resultado = `O número ${num1} é divisivel por ${num2}, resultando em ${num1/num2}`
+            }else{
+                resultado = `O número ${num1} não é divisivel por ${num2}`
+            }
+            document.querySelector("#result3").innerText = resultado
+            document.querySelector("#atividade3 .result").style.display = 'block'
+        }
+
+        function atividade4(){
+            let temp = document.querySelector("#input4").value
+            let resultado;
+
+            if(temp<15){
+                resultado = "frio"
+            }else if(temp<25){
+                resultado = "agradável"
+            }else{
+                resultado = "quente"
+            }
+            document.querySelector("#result4").innerText = `Está ${resultado}`
+            document.querySelector("#atividade4 .result").style.display = 'block'
+        }
+
+        function atividade5(){
+            let materias = []
+            var temp=0;
+            let resultado="";
+            for(let i=1;i<=3;i++ ){
+                for(let x=1;x<=3;x++){
+                    materias.push(document.querySelector(`#input5-${i}-${x}`).value)
+                }
+            }
+
+            for(let x=0;x<=2;x++){
+                temp+=parseInt(materias[x])
+            }            
+
+            resultado+=`Português "${temp}pts": ${temp>=60? "Aprovado": "Reprovado"}\n`
+
+            temp=0
+            for(let x=3;x<=5;x++){
+                temp+=parseInt(materias[x])
+            }
+            resultado+=`Matemática "${temp}pts": ${temp>=60? "Aprovado": "Reprovado"}\n`
+            
+            temp=0
+            for(let x=6;x<=8;x++){
+                temp+=parseInt(materias[x])
+            }
+            resultado+=`Ciências "${temp}pts": ${temp>=60? "Aprovado": "Reprovado"}\n`
+
+
+            document.querySelector("#result5").innerText = resultado
+            document.querySelector("#atividade5 .result").style.display = 'block'
+        }
+
+
+
+
+
+        function atividade6(){
+            let num = document.querySelector("#input6").value
+            let resultado=1
+            for(let i=1;i<num;i++){
+                resultado=resultado*(i+1)
+            }
+            document.querySelector("#result6").innerText = `O fatorial de ${num} é ${resultado}`
+            document.querySelector("#atividade6 .result").style.display = 'block'
+        }
+
+        function atividade7(){
+            let num = document.querySelector("#input7").value
+            let resultado="";
+            for(let i = num; i>=0; i--){
+                i==0?resultado+= `${i}. `:resultado+= `${i}, `                
+            }
+            document.querySelector("#result7").innerText = resultado
+            document.querySelector("#atividade7 .result").style.display = 'block'
+        }
+
+        function atividade8(){
+            let num = document.querySelector("#input8").value
+            let resultado="";
+            for(let i = 0; i<=10; i++){
+                resultado+=`${num} x ${i} = ${num*i} \n`
+            }
+
+            document.querySelector("#result8").innerText = resultado
+            document.querySelector("#atividade8 .result").style.display = 'block'
+        }
+
+        
+    </script>
+</body>
+</html>
