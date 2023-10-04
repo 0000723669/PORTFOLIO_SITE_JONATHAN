@@ -283,19 +283,19 @@
                     temp += parseInt(materias[x])
                 }
 
-                resultado += `Português "${temp}pts": ${temp >= 60 ? "Aprovado" : "Reprovado"}\n`
+                resultado += `Português "${temp.toFixed(2)}pts": ${temp >= 60 ? "Aprovado" : "Reprovado"}\n`
 
                 temp = 0
                 for (let x = 3; x <= 5; x++) {
                     temp += parseInt(materias[x])
                 }
-                resultado += `Matemática "${temp}pts": ${temp >= 60 ? "Aprovado" : "Reprovado"}\n`
+                resultado += `Matemática "${temp.toFixed(2)}pts": ${temp >= 60 ? "Aprovado" : "Reprovado"}\n`
 
                 temp = 0
                 for (let x = 6; x <= 8; x++) {
                     temp += parseInt(materias[x])
                 }
-                resultado += `Ciências "${temp}pts": ${temp >= 60 ? "Aprovado" : "Reprovado"}\n`
+                resultado += `Ciências "${temp.toFixed(2)}pts": ${temp >= 60 ? "Aprovado" : "Reprovado"}\n`
 
 
                 document.querySelector("#result5").innerText = resultado
@@ -362,12 +362,12 @@
             let classes = document.querySelectorAll(`#atividade${id} input`)
             let erro = false
             classes.forEach(item => {
-                if (item.value > 100) {
+                if (item.value > 33.33) {
                     erro = true
                 }
             });
             if (erro) {
-                alert("Os valores não podem ser maiores que 100")
+                alert("Os valores não podem ser maiores que 33.33pts")
             }
             return erro
         }
