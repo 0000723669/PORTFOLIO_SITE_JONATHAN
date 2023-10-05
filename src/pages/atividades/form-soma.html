@@ -269,7 +269,7 @@
         }
 
         function atividade5() {
-            if (!verificaCampos(5) && !numNegativo(5)  && !maiorQue100(5)) {
+            if (!verificaCampos(5) && !numNegativo(5) && !maiorQue100(5)) {
                 let materias = []
                 var temp = 0;
                 let resultado = "";
@@ -307,14 +307,13 @@
         function atividade6() {
             if (!verificaCampos(6) && !numNegativo(6)) {
                 let num = document.querySelector("#input6").value
-                let msgTela = ""
-                let resultado = 1
-                for (let i = 1; i < num; i++) {
-                    msgTela += `${resultado} x ${(i + 1)} = ${resultado * (i + 1)}\n`
-                    resultado = resultado * (i + 1)
+                function fat(x) {
+                    if (x <= 2) { return x; } return x * fat(x - 1)
                 }
-                msgTela += `\nO fatorial de ${num} é ${resultado}`
-                document.querySelector("#result6").innerText = msgTela
+            
+                let resultado = fat(num)
+
+                document.querySelector("#result6").innerText = `O fatorial de ${num} é ${resultado}`
                 document.querySelector("#atividade6 .result").style.display = 'block'
             }
         }
@@ -352,6 +351,9 @@
                     erro = true
                 }
             });
+
+            var arr = [1, 2, 3, 4, 5, 6]
+
             if (erro) {
                 alert("Preencha todos os campos")
             }
@@ -381,6 +383,7 @@
                     erro = true
                 }
             });
+
             if (erro) {
                 alert("Os valores têm que ser positivos")
             }
