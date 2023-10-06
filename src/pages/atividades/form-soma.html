@@ -297,13 +297,17 @@
         function atividade6() {
             if (!verificaCampos(6) && !numNegativo(6)) {
                 let num = document.querySelector("#input6").value
+                let processo = ""
+                for(var i = num; i>0;i--){
+                    i==1? processo+=`${i}`: processo+=`${i} x `
+                }
                 function fat(x) {
                     if (x <= 2) { return x; } return x * fat(x - 1)
                 }
 
                 let resultado = fat(num)
 
-                document.querySelector("#result6").innerText = `O fatorial de ${num} é ${resultado}`
+                document.querySelector("#result6").innerText = `${num}! = ${processo} = ${resultado}`
                 document.querySelector("#atividade6 .result").style.display = 'block'
             }
         }
@@ -341,8 +345,6 @@
                     erro = true
                 }
             });
-
-            var arr = [1, 2, 3, 4, 5, 6]
 
             if (erro) {
                 alert("Preencha todos os campos")
