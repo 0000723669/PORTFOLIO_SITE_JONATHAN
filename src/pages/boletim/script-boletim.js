@@ -99,32 +99,32 @@ function verificaValorMinMax(div) {
   bim1 < 0 || bim1 > 20
     ? (bimErro = 1)
     : bim2 < 0 || bim2 > 25
-    ? (bimErro = 2)
-    : bim3 < 0 || bim3 > 25
-    ? (bimErro = 3)
-    : bim4 < 0 || bim4 > 30
-    ? (bimErro = 4)
-    : null;
+      ? (bimErro = 2)
+      : bim3 < 0 || bim3 > 25
+        ? (bimErro = 3)
+        : bim4 < 0 || bim4 > 30
+          ? (bimErro = 4)
+          : null;
 
   if (bimErro > 0) {
     erro = true;
     bimErro == 1
       ? alert(
-          "O valor minimo é de 0 para todos os bimestres, e no máximo 20 para o bimestre 1!"
-        )
+        "O valor minimo é de 0 para todos os bimestres, e no máximo 20 para o bimestre 1!"
+      )
       : bimErro == 2
-      ? alert(
+        ? alert(
           "O valor minimo é de 0 para todos os bimestres, e no máximo 25 para o bimestre 2!"
         )
-      : bimErro == 3
-      ? alert(
-          "O valor minimo é de 0 para todos os bimestres, e no máximo 25 para o bimestre 3!"
-        )
-      : bimErro == 4
-      ? alert(
-          "O valor minimo é de 0 para todos os bimestres, e no máximo 30 para o bimestre 4!"
-        )
-      : null;
+        : bimErro == 3
+          ? alert(
+            "O valor minimo é de 0 para todos os bimestres, e no máximo 25 para o bimestre 3!"
+          )
+          : bimErro == 4
+            ? alert(
+              "O valor minimo é de 0 para todos os bimestres, e no máximo 30 para o bimestre 4!"
+            )
+            : null;
   }
   return erro;
 }
@@ -138,3 +138,4 @@ function verificaMateriaAdicionada() {
   erro ? alert("Esta matéria já foi adicionada!") : null;
   return erro;
 }
+
