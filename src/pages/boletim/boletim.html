@@ -18,37 +18,7 @@
   <body>
     <div class="page-content">
       <div class="portfolio-content">
-        <header class="cardshadow">
-          <nav class="nav-items">
-            <a href="../../../index.html#inicio" class="button to-left"
-              ><img
-                src="../../images/profile.png"
-                class="img"
-                alt="Imagem de Perfil"
-            /></a>
-
-            <a
-              href="../../../index.html#contato"
-              class="button to-right padding-large"
-              >CONTATOS</a
-            >
-            <a
-              href="../../../index.html#artigos"
-              class="button to-right padding-large"
-              >ARTIGOS</a
-            >
-            <a
-              href="../../../index.html#projetos"
-              class="button to-right padding-large"
-              >PROJETOS</a
-            >
-            <a
-              href="../../../index.html#sobre"
-              class="button to-right padding-large"
-              >SOBRE</a
-            >
-          </nav>
-        </header>
+       <div id="header"></div>
         <div class="main-container">
           <div
             class="main-content card d-flex justify-content-center align-items-center"
@@ -176,11 +146,7 @@
           </div>
         </div>
 
-        <footer class="footer centervh">
-          <a href="https://github.com/jonathandopovo" target="_blank">
-            <p class="center opacity">&copy; Jonathan de Oliveira Rocha</p>
-          </a>
-        </footer>
+        <div id="footer"></div>
       </div>
     </div>
 
@@ -190,5 +156,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="/src/components/header/index.js"></script>
+    <script type="module" src="/src/components/footer/index.js"></script>
   </body>
 </html>
