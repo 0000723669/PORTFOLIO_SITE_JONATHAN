@@ -1,5 +1,5 @@
-const header=()=> {
-    document.querySelector("#header").innerHTML = `<header class="cardshadow">
+const header = () => {
+  document.querySelector("#header").innerHTML = `<header class="cardshadow">
   <nav class="nav-items">
       <a href="/src/../index.html#inicio" class="button to-left "><img src="/src/images/profile.png" class="img" alt="Imagem de Perfil"></a>
   
@@ -9,7 +9,7 @@ const header=()=> {
       <a href="/src/../index.html#sobre" class="button to-right padding-large">SOBRE</a>
       
   </nav>
-  </header>`
-}
+  </header>`;
+};
 
-export default header
+export default header();
