@@ -1,4 +1,4 @@
-function header() {
+const header=()=> {
     document.querySelector("#header").innerHTML = `<header class="cardshadow">
   <nav class="nav-items">
       <a href="/src/../index.html#inicio" class="button to-left "><img src="/src/images/profile.png" class="img" alt="Imagem de Perfil"></a>
@@ -12,4 +12,4 @@ function header() {
   </header>`
 }
 
-header()
+export default header
