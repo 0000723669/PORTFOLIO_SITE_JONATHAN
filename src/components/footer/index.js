@@ -1,4 +1,4 @@
-function footer() {
+const footer=()=> {
     document.querySelector("#footer").innerHTML = `
     <footer class="footer centervh">
     <a href="https://github.com/jonathandopovo" target="_blank">
@@ -9,4 +9,4 @@ function footer() {
 }
     
 
-footer()
+export default footer

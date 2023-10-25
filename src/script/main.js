@@ -1,3 +1,6 @@
+import header from "../components/header/index.js"
+import footer from "../components/footer/index.js"
+
 function openContent(event, nomeArtigo) {
   var i, article_content, linkToArticle;
   article_content = document.getElementsByClassName("article-content");
@@ -26,3 +29,5 @@ if (artigoPadrao == url_atual) {
 
 
 
+header()
+footer()
