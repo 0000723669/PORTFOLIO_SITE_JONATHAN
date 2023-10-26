@@ -30,7 +30,7 @@ const context = [
 ];
 
 const icons = (context) => {
-  document.querySelector("#pageIcons");
+  let icons = document.querySelector("#pageIcons");
   context.forEach((element) => {
     icons.innexHTML += `
     <a href="${element.link}" target="_blank">
