@@ -1,5 +1,7 @@
 import header from "../components/header/index.js"
 import footer from "../components/footer/index.js"
+import card from "../components/card/index.js"
+import icons from "../components/icons/index.js"
 
 function openContent(event, nomeArtigo) {
   var i, article_content, linkToArticle;
@@ -28,6 +30,7 @@ if (artigoPadrao == url_atual) {
 }
 
 
-
 header()
 footer()
+card()
+icons()
