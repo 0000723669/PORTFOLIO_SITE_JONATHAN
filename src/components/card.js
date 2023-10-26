@@ -14,4 +14,23 @@ const card = (context) => {
   });
 };
 
-export default card;
+const cardContext = [
+  {
+    titulo: "App Inventor",
+    paragrafo:
+      "Projetos feitos no <a href='https://appinventor.mit.edu/' target='_blank'>App Inventor</a>.",
+    link: 'https://github.com/jonathandopovo/MEUS_APLICATIVOS_APP_INVENTOR" target="_blank',
+  },
+  {
+    titulo: "GitHub",
+    paragrafo: "Meus repositórios do GitHub.",
+    link: 'https://github.com/jonathandopovo?tab=repositories" target="_blank',
+  },
+  {
+    titulo: "Boletim",
+    paragrafo: "Boletim de Notas",
+    link: "/src/pages/boletim/boletim.html",
+  },
+];
+
+card(cardContext)
