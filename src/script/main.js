@@ -32,5 +32,3 @@ if (artigoPadrao == url_atual) {
 
 header()
 footer()
-card()
-icons()
