@@ -30,3 +30,4 @@ class Usuario {
     this.senha = senha;
   }
 }
+export { Usuario };
