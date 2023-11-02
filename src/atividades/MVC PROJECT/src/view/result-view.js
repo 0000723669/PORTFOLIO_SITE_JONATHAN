@@ -29,7 +29,7 @@ const resultView = {
         <td class="text-success"><strong>${params[i].getNome()}</strong></td>            
         <td><strong>${params[i].getIdade()}</strong></td>            
         <td class="text-primary"><strong><i>${params[i].getLogin()}</i><strong></td>            
-        <td><input class="border-0" type="password" disabled value="${params[i].getSenha()}"></td>            
+        <td><input class="border-0 bg-transparent" type="password" disabled value="${params[i].getSenha()}"></td>            
       `;
       tRBody.appendChild(newLine);
     }
