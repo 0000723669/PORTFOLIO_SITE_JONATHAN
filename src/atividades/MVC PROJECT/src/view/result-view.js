@@ -28,8 +28,8 @@ const resultView = {
         <th scope="row">#${i + 1}</th>            
         <td class="text-success"><strong>${params[i].getNome()}</strong></td>            
         <td><strong>${params[i].getIdade()}</strong></td>            
-        <td class="text-primary"><strong><i>${params[i].getLogin()}</i><strong></th>            
-        <td><input class="border-0" type="password" disabled value="${params[i].getSenha()}"></th>            
+        <td class="text-primary"><strong><i>${params[i].getLogin()}</i><strong></td>            
+        <td><input class="border-0" type="password" disabled value="${params[i].getSenha()}"></td>            
       `;
       tRBody.appendChild(newLine);
     }
