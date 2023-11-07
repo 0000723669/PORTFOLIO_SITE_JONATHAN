@@ -6,9 +6,11 @@ const viewController = {
     formNewUser.build();
     resultView.build();
   },
-
   update: (userArray, userToUpdate) => {
     resultView.update(userArray);
+    formNewUser.update(userToUpdate);
+  },
+  updateForm: (userToUpdate) => {
     formNewUser.update(userToUpdate);
   },
 };

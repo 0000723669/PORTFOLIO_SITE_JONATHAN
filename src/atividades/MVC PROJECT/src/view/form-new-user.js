@@ -15,7 +15,7 @@ const formNewUser = {
         <input class="form-control" name="login" type="senha" id="login" placeholder="Login">
         <label class="form-label" for="senha">Senha:</label>
         <input class="form-control" name="senha" type="password" id="senha"  placeholder="Senha">
-        <button type="submit" class="btn btn-primary mt-3">Salvar</button>
+        <button type="submit" id="btnSub" class="btn btn-primary mt-3">Salvar</button>
       </div>
       `;
     root.appendChild(formTemplate);
