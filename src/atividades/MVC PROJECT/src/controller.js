@@ -9,33 +9,39 @@ let currentId = null;
 const handleSubmit = (event) => {
   event.preventDefault();
   const user = new Usuario(nome.value, idade.value, login.value, senha.value);
-  if (submitState === submitType.NEW) {
+  if (submitState == submitType.NEW) {
     addUser(user);
-  } else if (submitState === submitType.UPDATE) {
+  } else if (submitState == submitType.UPDATE) {
     updateUser(currentId, user);
-    submitState = submitState.NEW;
-    btnSub.innerText = "NEW";
+    submitState = submitType.NEW;
+    btnSub.innerText = "Salvar";
   }
   viewController.update(data, new Usuario("", null, "", ""));
 };
 
 const clickEsquerdo = (event) => {
-  const currentId = event.target.closest("tr").id.split("")[4];
+  currentId = event.target.closest("tr").id.split("")[4];
   alert(
     `Clicou com o botão esquerdo, e o ${data[currentId]
       .getNome()
-      .toUpperCase()} será carregado para edição`
+      .toUpperCase()} será carregado para edição!`
   );
   viewController.updateForm(data[currentId]);
-  submitState = submitState.UPDATE;
+  submitState = submitType.UPDATE;
   btnSub.innerText = "Update";
 };
 
 const clickDireito = (event) => {
   event.preventDefault();
   if (event.button == 2) {
-    alert("Clicou com o botão direito");
     currentId = event.target.closest("tr").id.split("")[4];
+    alert(
+      `Clicou com o botão direito, e o ${data[currentId]
+        .getNome()
+        .toUpperCase()} será deletado!`
+    );
+    deleteUser(currentId);
+    document.getElementById(`user${currentId}`).remove();
   }
 };
 
@@ -47,7 +53,7 @@ const updateUser = (index, userToUpdate) => {
   data[index] = userToUpdate;
 };
 
-const deletUser = (index) => {
+const deleteUser = (index) => {
   data.splice(index, 1);
 };
 
@@ -56,7 +62,7 @@ const controller = {
     viewController.build();
     const form = document.getElementById("signForm");
     form.addEventListener("submit", handleSubmit);
-    const userList = document.querySelector("#users-result");
+    const userList = document.getElementById("users-result");
     userList.addEventListener("click", clickEsquerdo);
     userList.addEventListener("contextmenu", clickDireito);
   },
