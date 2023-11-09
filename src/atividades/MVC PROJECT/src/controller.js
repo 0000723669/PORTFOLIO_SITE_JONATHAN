@@ -35,13 +35,15 @@ const clickDireito = (event) => {
   event.preventDefault();
   if (event.button == 2) {
     currentId = event.target.closest("tr").id.split("")[4];
-    alert(
-      `Clicou com o botão direito, e o ${data[currentId]
+    const confirm = window.confirm(
+      `Você tem certeza que deseja deletar o usuário ${data[currentId]
         .getNome()
-        .toUpperCase()} será deletado!`
+        .toUpperCase()}?`
     );
-    deleteUser(currentId);
-    document.getElementById(`user${currentId}`).remove();
+    if (confirm) {
+      deleteUser(currentId);
+      viewController.update(data, new Usuario("", null, "", ""));
+    }
   }
 };
 
