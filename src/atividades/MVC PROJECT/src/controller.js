@@ -1,10 +1,20 @@
 import { Usuario } from "./model/usuario.model.js";
 import { viewController } from "./view/viewController.js";
+import {dataService} from "./api/data.service.js"
 
 let data = [];
 const submitType = { NEW: 0, UPDATE: 1 };
 let submitState = submitType.NEW;
 let currentId = null;
+
+const loadData = async () => {
+  const temp = await dataService.carregarDados();
+  data = temp.map(
+    (usuario) =>
+      new Usuario(usuario.nome, usuario.idade, usuario.login, usuario.senha)
+  );
+  viewController.update(data, new Usuario("", null, "", ""));
+};
 
 const handleSubmit = (event) => {
   event.preventDefault();
@@ -67,6 +77,9 @@ const controller = {
     const userList = document.getElementById("users-result");
     userList.addEventListener("click", clickEsquerdo);
     userList.addEventListener("contextmenu", clickDireito);
+    window.onload = () => {
+      loadData();
+    };
   },
 };
 
