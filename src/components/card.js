@@ -31,6 +31,11 @@ const cardContext = [
     paragrafo: "Boletim de Notas",
     link: "/src/pages/boletim/boletim.html",
   },
+  {
+    titulo: "CRUD MVC",
+    paragrafo: "Cadastro de Pessoa com API",
+    link: "https://github.com/jonathandopovo/js-mvc-crud-jor"
+  }
 ];
 
 card(cardContext)
